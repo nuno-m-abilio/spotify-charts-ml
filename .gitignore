@@ -217,4 +217,22 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-data/charts_albums_weekly.csv
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Dados locais (nunca subir CSVs volumosos pro repositório)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Checkpoints de Notebooks e Python Caches
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.pyc
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

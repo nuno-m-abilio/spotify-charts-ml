@@ -6,7 +6,7 @@
 
 ### US01: Setup Estrutural, Pipeline de Divisão Temporal e Controle de Data Leakage
 
-* **Responsável:** 
+* **Responsável:** Nuno
 * **Descrição:** Como pesquisador do projeto, quero estruturar o repositório e o pipeline de particionamento temporal para garantir que as bases D0, D1 e D2 sejam geradas sem contaminação futura.
 * **Atividades:**
 1. Inicializar o repositório Git com `.gitignore` adequado (ignorando a pasta `data/`).
@@ -22,9 +22,9 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] O particionamento temporal respeita a proporção aproximada de 60% (D0), 20% (D1) e 20% (D2).
-* [ ] Três arquivos CSV distintos (`d0.csv`, `d1.csv`, `d2.csv`) foram gerados na pasta de processados.
-* [ ] Repositório inicializado e estruturado com `.gitignore` funcional.
+* [x] O particionamento temporal respeita a proporção aproximada de 60% (D0), 20% (D1) e 20% (D2).
+* [x] Três arquivos CSV distintos (`d0.csv`, `d1.csv`, `d2.csv`) foram gerados na pasta de processados.
+* [x] Repositório inicializado e estruturado com `.gitignore` funcional.
 
 
 
@@ -32,7 +32,7 @@
 
 ### US02: Engenharia de Atributos e Construção do Target
 
-* **Responsável:** 
+* **Responsável:** Nuno
 * **Descrição:** Como cientista de dados, quero construir as variáveis preditivas e definir a variável-alvo para transformar o histórico de rankings em um problema tabular de aprendizado de máquina.
 * **Atividades:**
 1. Formular e calcular a variável-alvo binária (`target_trend_up`) indicando se o álbum subiu de posição na semana seguinte.
@@ -48,9 +48,9 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Pelo menos 6 variáveis explicativas úteis e não redundantes criadas no dataset.
-* [ ] Target binário validado e sem valores nulos.
-* [ ] Pipeline de transformação exportado ou estruturado para evitar vazamento entre partições.
+* [x] Pelo menos 6 variáveis explicativas úteis e não redundantes criadas no dataset.
+* [x] Target binário validado e sem valores nulos.
+* [x] Pipeline de transformação exportado ou estruturado para evitar vazamento entre partições.
 
 
 
@@ -58,7 +58,7 @@
 
 ### US03: Limpeza de Dados e Análise Exploratória dos Dados (AED)
 
-* **Responsável:** 
+* **Responsável:**  Nuno
 * **Descrição:** Como analista de dados, quero auditar a integridade da base e explorar suas características para identificar desbalanceamento, valores espúrios e padrões de consumo nos países analisados.
 * **Atividades:**
 1. Realizar auditoria quantitativa da base: contagem de nulos, duplicatas, tipos de dados e cardinalidade.
@@ -73,8 +73,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Notebook de AED contendo gráficos de distribuição, correlação e contagem de classes.
-* [ ] Relatório sucinto de auditoria com contagem de instâncias, nulos tratados e dimensionalidade final.
+* [x] Notebook de AED contendo gráficos de distribuição, correlação e contagem de classes.
+* [x] Relatório sucinto de auditoria com contagem de instâncias, nulos tratados e dimensionalidade final.
 
 
 
