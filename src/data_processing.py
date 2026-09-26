@@ -11,14 +11,14 @@ def engineer_features_and_target(df: pd.DataFrame) -> pd.DataFrame:
     """
     df = df.copy()
 
-    # 1. Padronização de datas
+    # Padronização de datas
     df['date'] = pd.to_datetime(df['date'])
     df['release_date'] = pd.to_datetime(df['release_date'], errors='coerce')
 
-    # 2. Ordenação obrigatória para cálculo correto da semana seguinte
+    # Ordenação obrigatória para cálculo correto da semana seguinte
     df = df.sort_values(by=['country', 'uri', 'date']).reset_index(drop=True)
 
-    # 3. Definição da Variável-Alvo: O álbum melhorou de posição (rank menor)?
+    # Definição da Variável-Alvo: O álbum melhorou de posição (rank menor)?
     df['next_rank'] = df.groupby(['country', 'uri'])['rank'].shift(-1)
     df['target_trend_up'] = (df['next_rank'] < df['rank']).astype(int)
 
@@ -26,7 +26,7 @@ def engineer_features_and_target(df: pd.DataFrame) -> pd.DataFrame:
     df = df.dropna(subset=['next_rank']).copy()
     df = df.drop(columns=['next_rank'])
 
-    # 4. Engenharia de Atributos Explicativos
+    # Engenharia de Atributos Explicativos
     release_date_clean = df['release_date'].fillna(df['date'])
     df['album_age_days'] = (df['date'] - release_date_clean).dt.days.clip(lower=0)
     df['dist_from_peak'] = df['rank'] - df['peak_rank']
