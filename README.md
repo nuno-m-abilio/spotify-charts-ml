@@ -178,9 +178,7 @@ decisão relevante, está em [`docs/diario_experimentos.md`](docs/diario_experim
 
 ## 7. Uso de Ferramentas de IA Generativa
 
-*(Seção a ser detalhada antes da entrega final, conforme item 14 do edital — preencher com
-ferramenta utilizada, finalidade, conteúdo aproveitado e validações realizadas pela equipe.
-Esta mesma tabela deverá ser replicada no apêndice do short paper.)*
+*A IA generativa (Claude, Anthropic) foi usada para auxiliar na compreensão do trabalho e de certos termos técnicos, para a criação dos épicos e user stories que guiaram a criação do projeto pela equipe, bem como para a solução de dúvidas e geração de texto para o relatório.*
 
 ---
 
@@ -188,21 +186,21 @@ Esta mesma tabela deverá ser replicada no apêndice do short paper.)*
 
 | Item | Status |
 |---|---|
-| Dataset do Kaggle com dados temporais recentes e proposta registrada | ✅ |
-| D0, D1 e D2 definidos cronologicamente, sem embaralhamento indevido | ✅ |
-| D2 não utilizado para ajustes, seleção ou pré-processamento | ✅ |
-| Algoritmo implementado do zero e comparado a uma biblioteca | ✅ |
-| Número mínimo de modelos atendido (n=3) | ✅ |
-| Modelo principal iniciado sem pesos pré-treinados | ✅ |
-| Experimentos M0, MFT, MRT e MREC executados | ✅ |
-| Pelo menos duas configurações de fine-tuning testadas | ✅ |
-| Pelo menos uma análise quantitativa de drift realizada | ✅ (KS, PSI e Qui-Quadrado) |
-| Métricas adequadas ao problema apresentadas | ✅ |
-| Três seeds/inicializações utilizadas quando aplicável | ✅ |
-| Diário com pelo menos 8 experimentos relevantes | ✅ |
-| Explicabilidade e análise de erros realizadas | ✅ |
-| Short paper em formato SBC concluído | ⬜ pendente |
-| Slides concluídos e salvos em formato PDF | ⬜ pendente |
-| README e dependências documentados | ✅ |
-| Uso de IA generativa declarado | ⬜ pendente |
-| Todos os integrantes preparados para a defesa individual | ⬜ pendente |
+| Dataset do Kaggle com dados temporais recentes e proposta registrada | Feito |
+| D0, D1 e D2 definidos cronologicamente, sem embaralhamento indevido | Feito |
+| D2 não utilizado para ajustes, seleção ou pré-processamento | Feito |
+| Algoritmo implementado do zero e comparado a uma biblioteca | Feito |
+| Número mínimo de modelos atendido (n=3) | Feito |
+| Modelo principal iniciado sem pesos pré-treinados | Feito |
+| Experimentos M0, MFT, MRT e MREC executados | Feito |
+| Pelo menos duas configurações de fine-tuning testadas | Feito |
+| Pelo menos uma análise quantitativa de drift realizada | Feito (KS, PSI e Qui-Quadrado) |
+| Métricas adequadas ao problema apresentadas | Feito |
+| Três seeds/inicializações utilizadas quando aplicável | Feito |
+| Diário com pelo menos 8 experimentos relevantes | Feito |
+| Explicabilidade e análise de erros realizadas | Feito |
+| Short paper em formato SBC concluído | Feito |
+| Slides concluídos e salvos em formato PDF | Feito |
+| README e dependências documentados | Feito |
+| Uso de IA generativa declarado | Feito|
+| Todos os integrantes preparados para a defesa individual | Feito |

@@ -6,7 +6,7 @@
 
 ### US01: Setup Estrutural, Pipeline de Divisão Temporal e Controle de Data Leakage
 
-* **Responsável:** Nuno
+* **Responsável:**
 * **Descrição:** Como pesquisador do projeto, quero estruturar o repositório e o pipeline de particionamento temporal para garantir que as bases D0, D1 e D2 sejam geradas sem contaminação futura.
 * **Atividades:**
 1. Inicializar o repositório Git com `.gitignore` adequado (ignorando a pasta `data/`).
@@ -32,7 +32,7 @@
 
 ### US02: Engenharia de Atributos e Construção do Target
 
-* **Responsável:** Nuno
+* **Responsável:**
 * **Descrição:** Como cientista de dados, quero construir as variáveis preditivas e definir a variável-alvo para transformar o histórico de rankings em um problema tabular de aprendizado de máquina.
 * **Atividades:**
 1. Formular e calcular a variável-alvo binária (`target_trend_up`) indicando se o álbum subiu de posição na semana seguinte.
@@ -58,7 +58,7 @@
 
 ### US03: Limpeza de Dados e Análise Exploratória dos Dados (AED)
 
-* **Responsável:**  Nuno
+* **Responsável:**
 * **Descrição:** Como analista de dados, quero auditar a integridade da base e explorar suas características para identificar desbalanceamento, valores espúrios e padrões de consumo nos países analisados.
 * **Atividades:**
 1. Realizar auditoria quantitativa da base: contagem de nulos, duplicatas, tipos de dados e cardinalidade.
@@ -100,9 +100,9 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Modelo M0 treinado com sucesso em D0.
-* [ ] Métricas históricas em D0 e validação temporal devidamente registradas para 3 seeds.
-* [ ] Parâmetros e arquitetura documentados no diário de experimentos.
+* [x] Modelo M0 treinado com sucesso em D0.
+* [x] Métricas históricas em D0 e validação temporal devidamente registradas para 3 seeds.
+* [x] Parâmetros e arquitetura documentados no diário de experimentos.
 
 
 
@@ -125,8 +125,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Código do algoritmo implementado funcionalmente com convergência do gradiente demonstrada.
-* [ ] Métodos de inicialização, treinamento e predição implementados e testados com matrizes de D0.
+* [x] Código do algoritmo implementado funcionalmente com convergência do gradiente demonstrada.
+* [x] Métodos de inicialização, treinamento e predição implementados e testados com matrizes de D0.
 
 
 
@@ -149,8 +149,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Comparação documentada entre a implementação própria e a implementação de biblioteca (tempo, acurácia, convergência).
-* [ ] Terceiro modelo de biblioteca (ex: árvores) treinado e avaliado em D0.
+* [x] Comparação documentada entre a implementação própria e a implementação de biblioteca (tempo, acurácia, convergência).
+* [x] Terceiro modelo de biblioteca (ex: árvores) treinado e avaliado em D0.
 
 
 
@@ -176,9 +176,9 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Duas variantes de MFT executadas e documentadas em D1.
-* [ ] Modelo MREC treinado exclusivamente em D1 com 3 seeds.
-* [ ] Pesos de M0, MFT e MREC salvos para avaliação posterior.
+* [x] Duas variantes de MFT executadas e documentadas em D1.
+* [x] Modelo MREC treinado exclusivamente em D1 com 3 seeds.
+* [x] Pesos de M0, MFT e MREC salvos para avaliação posterior.
 
 
 
@@ -201,8 +201,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Modelo MRT treinado com sucesso no conjunto acumulado D0 + D1.
-* [ ] Tempos de execução e métricas de convergência registrados para as 3 seeds.
+* [x] Modelo MRT treinado com sucesso no conjunto acumulado D0 + D1.
+* [x] Tempos de execução e métricas de convergência registrados para as 3 seeds.
 
 
 
@@ -225,8 +225,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Tabela comparativa com valores estatísticos (p-valor do KS ou valor do PSI) para as principais features entre os blocos temporais.
-* [ ] Discussão formal identificando quais variáveis sofreram drift estatisticamente significativo.
+* [x] Tabela comparativa com valores estatísticos (p-valor do KS ou valor do PSI) para as principais features entre os blocos temporais.
+* [x] Discussão formal identificando quais variáveis sofreram drift estatisticamente significativo.
 
 
 
@@ -251,8 +251,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] `requirements.txt` gerado e testado em ambiente limpo.
-* [ ] `README.md` detalhado com instruções claras e tabela do diário de 8 experimentos preenchida.
+* [x] `requirements.txt` gerado e testado em ambiente limpo.
+* [x] `README.md` detalhado com instruções claras e tabela do diário de 8 experimentos preenchida.
 
 
 
@@ -275,8 +275,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Gráficos de importância global e local gerados via SHAP (summary plot, force plot ou bar plot).
-* [ ] Seção de análise de erros documentando padrões observados em previsões incorretas.
+* [x] Gráficos de importância global e local gerados via SHAP (summary plot, force plot ou bar plot).
+* [x] Seção de análise de erros documentando padrões observados em previsões incorretas.
 
 
 
@@ -300,14 +300,14 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Tabela consolidada contendo M0, MFT, MRT e MREC avaliados em D2.
-* [ ] Matrizes de confusão e métricas completas calculadas e salvas.
+* [x] Tabela consolidada contendo M0, MFT, MRT e MREC avaliados em D2.
+* [x] Matrizes de confusão e métricas completas calculadas e salvas.
 
 
 
 ---
 
-## ÉPICO 5: Relatório no Formato SBC (Overleaf)
+## ÉPICO 5: Relatório no Formato SBC (Google Docs)
 
 ### US13: Escrita da Seção de Metodologia e Protocolo Experimental
 
@@ -321,13 +321,13 @@
 
 
 * **Regras de Negócio (RN):**
-* **RN13.1:** Seguir rigorosamente o template LaTeX da Sociedade Brasileira de Computação (SBC).
+* **RN13.1:** Seguir rigorosamente o template da Sociedade Brasileira de Computação (SBC).
 * **RN13.2:** Declarar explicitamente a utilização de ferramentas de IA generativa no apêndice conforme exigência do item 14 da especificação.
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Seção "Materiais e Métodos" concluída no Overleaf.
-* [ ] Apêndice de IA generativa preenchido em conformidade com o edital.
+* [x] Seção "Materiais e Métodos" concluída no Google Docs.
+* [x] Apêndice de IA generativa preenchido em conformidade com o edital.
 
 
 
@@ -350,8 +350,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Seções "Resultados" e "Discussão" redigidas no Overleaf com tabelas e gráficos em formato vetorial/alta resolução.
-* [ ] Interpretação técnica profunda conectando as métricas com o domínio de streaming musical.
+* [x] Seções "Resultados" e "Discussão" redigidas no Google Docs com tabelas e gráficos em formato vetorial/alta resolução.
+* [x] Interpretação técnica profunda conectando as métricas com o domínio de streaming musical.
 
 
 
@@ -374,8 +374,8 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Seções de Introdução, Fundamentação Teórica e Conclusões integradas no Overleaf.
-* [ ] Artigo compilando perfeitamente em PDF sem erros de sintaxe LaTeX ou referências quebradas.
+* [x] Seções de Introdução, Fundamentação Teórica e Conclusões integradas no Google Docs.
+* [x] Artigo compilando perfeitamente em PDF sem erros ou referências quebradas.
 
 
 
@@ -400,7 +400,7 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Slides de abertura, metodologia e desenvolvimento prontos e revisados.
+* [x] Slides de abertura, metodologia e desenvolvimento prontos e revisados.
 
 
 
@@ -422,7 +422,7 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Slides do algoritmo do zero, explicabilidade e erros concluídos e integrados ao arquivo mestre.
+* [x] Slides do algoritmo do zero, explicabilidade e erros concluídos e integrados ao arquivo mestre.
 
 
 
@@ -446,5 +446,5 @@
 
 
 * **Critérios de Aceitação (CA):**
-* [ ] Apresentação completa finalizada cobrindo todos os itens do roteiro da Seção 18.
-* [ ] Arquivo PDF exportado, revisado e validado pela equipe antes do ensaio da defesa.
+* [x] Apresentação completa finalizada cobrindo todos os itens do roteiro da Seção 18.
+* [x] Arquivo PDF exportado, revisado e validado pela equipe antes do ensaio da defesa.
